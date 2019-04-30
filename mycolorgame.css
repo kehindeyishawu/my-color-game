@@ -1,0 +1,57 @@
+h1 {
+	text-align: center;
+	background-color: rgb(60, 80, 255);
+	padding: 20px 0;
+	line-height: 40px;
+	margin: 0 0;
+	color: white;
+	letter-spacing: 15px;
+}
+
+body{
+	background-color: rgb(10, 10, 10);
+	margin: 0 0;
+	
+}
+
+button{
+	margin-right: 50px;
+	font-weight: bold;
+	border:none;
+	background-color: white; 
+	height: inherit;
+	font-size: inherit;
+	outline: none;
+}
+button:hover{
+	background-color: rgb(30, 20, 255);
+}
+.bg{
+	background-color: rgb(30, 20, 255);
+}
+
+.container{
+	width: 550px;
+	margin: 40px auto;
+}
+.square{
+	background-color: purple;
+	width: 30%;
+	padding-bottom: 20%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 50%;
+	transition: background-color 0.5s;
+}
+
+
+.stripe{
+	background-color: white; 
+	text-align: center;
+	height: 21px;
+}
+
+#message{
+	display: inline-block;
+	width: 350px
+}
