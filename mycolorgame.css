@@ -49,6 +49,7 @@ button:hover{
 	background-color: white; 
 	text-align: center;
 	height: 21px;
+	font-size: 1rem;
 }
 
 #message{
