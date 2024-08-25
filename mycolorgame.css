@@ -15,7 +15,7 @@ body{
 }
 
 button{
-	margin-right: 50px;
+	/* margin-right: 50px; */
 	font-weight: bold;
 	border:none;
 	background-color: white; 
@@ -31,9 +31,11 @@ button:hover{
 }
 
 .container{
-	width: 550px;
+	/* width: 550px; */
+	width: 40%;
 	margin: 40px auto;
 }
+
 .square{
 	background-color: purple;
 	width: 30%;
@@ -46,13 +48,25 @@ button:hover{
 
 
 .stripe{
+	display: flex;
+	justify-content: flex-start;
 	background-color: white; 
-	text-align: center;
-	height: 21px;
 	font-size: 2rem;
 }
 
+.stripe div,button{
+	margin: 0 auto;
+}
+
 #message{
-	display: inline-block;
-	width: 350px
+	flex-basis: 240px;
+	text-align: center;
+	margin: auto 0 auto 18%;
+}
+
+@media (max-width: 767px) {
+	.container{
+		width: 80%;
+		/* opacity: 0; */
+	}
 }
