@@ -38,24 +38,24 @@ square.on("click", function(){
 });
 
 $(".easy").click(function(){
-	$(".stripe button:nth-of-type(4)").removeClass("bg");
-	$(".stripe button:nth-of-type(3)").removeClass("bg");
+	$(".stripe .hard").removeClass("bg");
+	$(".stripe .medium").removeClass("bg");
 	$(this).addClass("bg");
 	numsquare=3;
 	reset()
 });
 
-$(".stripe button:nth-of-type(3)").click(function(){
-	$(".stripe button:nth-of-type(2)").removeClass("bg");
-	$(".stripe button:nth-of-type(4)").removeClass("bg");
+$(".stripe .medium").click(function(){
+	$(".stripe .easy").removeClass("bg");
+	$(".stripe .hard").removeClass("bg");
 	$(this).addClass("bg");
 	numsquare=6;
 	reset()
 });
 
-$(".stripe button:nth-of-type(4)").click(function(){
-	$(".stripe button:nth-of-type(2)").removeClass("bg");
-	$(".stripe button:nth-of-type(3)").removeClass("bg");
+$(".stripe .hard").click(function(){
+	$(".stripe .easy").removeClass("bg");
+	$(".stripe .medium").removeClass("bg");
 	$(this).addClass("bg");
 	numsquare=9;
 	reset();
@@ -63,19 +63,19 @@ $(".stripe button:nth-of-type(4)").click(function(){
 
 $(".reset").on("click", function(){
 	
-	if($(".stripe button:nth-of-type(2)").css("background-color")==="rgb(30, 20, 255)"){
-		$(".stripe button:nth-of-type(3)").removeClass("bg");
-		$(".stripe button:nth-of-type(4)").removeClass("bg");
+	if($(".stripe .easy").css("background-color")==="rgb(30, 20, 255)"){
+		$(".stripe .medium").removeClass("bg");
+		$(".stripe .hard").removeClass("bg");
 		numsquare=3;
 	}
-	if($(".stripe button:nth-of-type(3)").css("background-color")==="rgb(30, 20, 255)"){
-		$(".stripe button:nth-of-type(2)").removeClass("bg");
-		$(".stripe button:nth-of-type(4)").removeClass("bg");
+	if($(".stripe .medium").css("background-color")==="rgb(30, 20, 255)"){
+		$(".stripe .easy").removeClass("bg");
+		$(".stripe .hard").removeClass("bg");
 		numsquare=6;
 	}
-	if($(".stripe button:nth-of-type(4)").css("background-color")==="rgb(30, 20, 255)"){
-		$(".stripe button:nth-of-type(2)").removeClass("bg");
-		$(".stripe button:nth-of-type(3)").removeClass("bg");
+	if($(".stripe .hard").css("background-color")==="rgb(30, 20, 255)"){
+		$(".stripe .easy").removeClass("bg");
+		$(".stripe .medium").removeClass("bg");
 	 	numsquare=9;
 	}
 	reset();
@@ -127,7 +127,7 @@ function reset (){
 	// change reset display to reset
 	$(".stripe .reset").text("reset");
 	// change buttons back to hard
-	$(".stripe .hard").text("hard");
+	$(".stripe .hard").text("Hard");
 	// set square condition
 	square.on("click", function() {
 		if($(this).css("background-color") === pick){
