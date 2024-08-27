@@ -63,3 +63,27 @@ button:hover{
 	text-align: center;
 	margin: auto 0 auto 18%;
 }
+
+
+@media (max-width: 767px) {
+	h1{
+		font-size: 1.1rem;
+		font-weight: 900;
+		letter-spacing: 10px;
+		padding: 10px 0;
+	}
+	.stripe{
+		display: block;
+		font-size: 80%;
+		text-align: center;
+	}
+	.container{
+		width: 85%;
+	}
+	#message{
+		margin: 0 3% 0 23%;
+	}
+	.difficulty-buttons{
+		display: inline;
+	}
+}
